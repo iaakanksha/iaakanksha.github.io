@@ -1,0 +1,1 @@
+<p>I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
