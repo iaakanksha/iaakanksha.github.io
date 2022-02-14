@@ -1,0 +1,78 @@
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale="> -->
+  <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Aakanksha Mestry's Internships</title>
+  <link rel="stylesheet" href="./Internship.css">
+ <!-- Bootstrap Files -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+  <h1 class="header" >Internships</h1>
+  <div class="pro">
+  <div class="card-deck">
+  <div class="card shadow p-3 mb-5 bg-white rounded">
+    <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">I Prime Skills </h5>
+      <p class="card-text"><b>Worked as : </b> Machine Learning Intern </p>
+        <p><b>Duration </b>  : DEC 2021 - FEB 2022 </p> <b>Stipend </b>  : 3000 INR </p>
+        <p>
+        Worked in a R&D team as a online course developer on machine learning and python.
+        Created content in form of ppt, assignments and coding exercises. Developed 2 case studies ( Real life projects ) on technologies like 
+        Machine learning, Deep learning and Computer Vision.
+
+    </p>
+      
+      <p class="card-text"></p>
+    </div>
+    </div>
+    <div>
+  </div>
+
+  <div class="card shadow p-3 mb-5 bg-white rounded">
+    <img class="card-img-top" src="https://media-exp1.licdn.com/dms/image/C4E0BAQFsR2odu1HlDw/company-logo_200_200/0/1618823231043?e=2159024400&v=beta&t=MZ3lPbSbZCE34gd76CFpCF0Tzs3YBH3gv2rI0lBxsSg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Feynn Labs</h5>
+      <p class="card-text"> <b>Worked as </b> : Machine Learning and Data Analysis Intern
+         <b>Duration </b>  : NOV 2021 - JAN 2022 </p>
+          <p>
+        	Proposed and created a Customer churn prediction model for an anonymous BANK. (Individual Project)
+        	Developed a customer segmentation model on real life data.(Team Project: Lead team of 4 members including self)
+         </p>
+       
+      <p class="card-text"></p>
+    </div>
+    </div>
+  
+
+     <div class="card shadow p-3 mb-5 bg-white rounded">
+    <img class="card-img-top" src="data:image/png;base64,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" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">The Sparks Foundation</h5>
+      <p class="card-text"> <b>Worked as </b> : Data Science and Business Analytics Intern
+        <b>Duration </b>  : OCT 2021 - NOV 2021 </p>
+        <p> Built various projects in domains of ML and Data Analysis from Beginner to Advanced level here.
+       
+      <p class="card-text"></p>
+    </div>
+    </div>
+  
+   
+ 
+ 
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
